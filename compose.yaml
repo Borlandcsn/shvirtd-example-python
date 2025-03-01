@@ -1,11 +1,13 @@
 include:
-  - ~/shvirtd-example-python/proxy.yaml
+  - proxy.yaml
 
 version: "3"
 
 services:
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.python
     env_file: .env
     restart: always
     networks:
@@ -33,27 +35,6 @@ networks:
   backend:
     name: backend
     driver: bridge
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-networks:
-  backend
     
     
     
