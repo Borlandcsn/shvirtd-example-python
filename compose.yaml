@@ -7,21 +7,20 @@ services:
   web:
     build: .
     restart: always
-    networks:
-      - backend 
+    networks: ["backend"]
 
 
   db:
      image: mysql:8
      restart: always
-     networks:
-       - backend 
+     networks: ["backend"]
      
 
 
 networks:
-  - backend:
-      driver: bridge
+  backend:
+    name: backend
+    driver: bridge
 
 
 
