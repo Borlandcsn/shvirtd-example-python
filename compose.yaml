@@ -1,1 +1,2 @@
-
+include:
+  - ~/shvirtd-example-python/proxy.yaml
