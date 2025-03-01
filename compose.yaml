@@ -28,11 +28,6 @@ services:
       - MYSQL_ROOT_HOST="%"
      
 
-
-networks:
-  backend:
-    name: backend
-    driver: bridge
     
     
     
