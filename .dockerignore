@@ -3,3 +3,4 @@ LICENSE
 nginx/*
 README.md
 proxy.yaml
+not_tested_main.py
